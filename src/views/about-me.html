@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevSearch</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+      <div class="container">
+        <a class="navbar-brand navbar-logo" href="/">DevSearch</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+            <!-- Dark Mode Toggle -->
+            <li class="nav-item align-items-center d-flex my-2">
+              <i class="fas fa-sun"></i>
+              <div class="ms-2 form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="themingSwitcher"
+                  data-bs-theme-value="auto"
+                />
+              </div>
+              <i class="fas fa-moon"></i>
+            </li>
+
+            <!-- Navigation Links -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Developers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li id="addProjectNavItem" class="nav-item d-none">
+              <a class="nav-link" href="add-project.html">Add Project</a>
+            </li>
+            <li id="dashboardNavItem" class="nav-item d-none">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+
+          <!-- Authentication Buttons -->
+          <div>
+            <a id="loginButton" href="login.html" class="btn btn-second"
+              >Login</a
+            >
+            <a id="registerButton" href="register.html" class="btn btn-main"
+              >Sign Up</a
+            >
+            <button id="logoutButton" class="btn btn-main d-none">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start About Me -->
+    <div class="about-me py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="image text-center p-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="imgs/team-1.png"
+                  alt="Image"
+                />
+              </div>
+              <div class="card-body text-center">
+                <a
+                  href="#"
+                  class="card-title username fw-bold text-decoration-none mt-5 fs-4"
+                  >Username</a
+                >
+                <p class="text-muted fw-bold mt-2">Frontend Developer</p>
+                <!-- <div class="skills">
+                  <span class="badge btn-main p-2">HTML</span>
+                  <span class="badge btn-main p-2">CSS</span>
+                  <span class="badge btn-main p-2">JavaScript</span>
+                  <span class="badge btn-main p-2">Python</span>
+                </div> -->
+              </div>
+              <div class="button m-auto mb-5">
+                <a href="#" class="btn btn-main"> Send Message </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <div class="about ms-3 pt-5">
+              <h4 class="fw-bold text-uppercase">About Me</h4>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                aspernatur autem quidem dolores. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quae aspernatur autem quidem
+                dolores.
+              </p>
+              <h4 class="fw-bold text-uppercase mt-5">Skills</h4>
+              <div class="skills">
+                <span class="badge btn-main p-2">HTML</span>
+                <span class="badge btn-main p-2">CSS</span>
+                <span class="badge btn-main p-2">JavaScript</span>
+                <span class="badge btn-main p-2">Python</span>
+              </div>
+              <h4 class="fw-bold text-uppercase mt-5">Projects</h4>
+              <div class="projects">
+                <div class="card d-inline-block mb-3 me-3">
+                  <div class="image">
+                    <img class="img-fluid" src="imgs/work-01.jpg" alt="image" />
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="single-project.html"
+                      class="card-title fw-bold fs-5 text-decoration-none"
+                      >Code Sniper</a
+                    >
+                    <p class="text-muted">
+                      By <a class="text-decoration-none" href="#">Username</a>
+                    </p>
+
+                    <h6 class="text-muted">
+                      <span>0%</span> Postitive Feedback <span>(0 Votes)</span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="card d-inline-block mb-3 me-3">
+                  <div class="image">
+                    <img class="img-fluid" src="imgs/work-02.jpg" alt="image" />
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="single-project.html"
+                      class="card-title fw-bold fs-5 text-decoration-none"
+                      >Code Sniper</a
+                    >
+                    <p class="text-muted">
+                      By <a class="text-decoration-none" href="#">Username</a>
+                    </p>
+
+                    <h6 class="text-muted">
+                      <span>0%</span> Postitive Feedback <span>(0 Votes)</span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="card d-inline-block mb-3 me-3">
+                  <div class="image">
+                    <img class="img-fluid" src="imgs/work-03.jpg" alt="image" />
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="single-project.html"
+                      class="card-title fw-bold fs-5 text-decoration-none"
+                      >Code Sniper</a
+                    >
+                    <p class="text-muted">
+                      By <a class="text-decoration-none" href="#">Username</a>
+                    </p>
+
+                    <h6 class="text-muted">
+                      <span>0%</span> Postitive Feedback <span>(0 Votes)</span>
+                    </h6>
+                  </div>
+                </div>
+                <div class="card d-inline-block mb-3 me-3">
+                  <div class="image">
+                    <img class="img-fluid" src="imgs/work-04.jpg" alt="image" />
+                  </div>
+                  <div class="card-body">
+                    <a
+                      href="single-project.html"
+                      class="card-title fw-bold fs-5 text-decoration-none"
+                      >Code Sniper</a
+                    >
+                    <p class="text-muted">
+                      By <a class="text-decoration-none" href="#">Username</a>
+                    </p>
+
+                    <h6 class="text-muted">
+                      <span>0%</span> Postitive Feedback <span>(0 Votes)</span>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Me -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/darkModeToggle.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

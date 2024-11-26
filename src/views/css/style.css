@@ -1,0 +1,78 @@
+/* Start Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --main-color: #608bc1;
+  --seconady-color: #133e87;
+  --dark-color: #3b1c32;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-main {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-second {
+  outline: 1px solid var(--seconady-color);
+}
+
+.btn-main:hover {
+  background-color: var(--seconady-color);
+  color: #fff;
+  font-weight: 600;
+}
+/* End Global Rules */
+
+/* Start Navbar & Landing */
+.landing {
+  background-color: var(--seconady-color);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--seconady-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--seconady-color);
+}
+
+.navbar-logo {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.navbar-logo:hover {
+  color: var(--seconady-color);
+}
+/* End Navbar & Landing */
+
+/* Start Users */
+.users .card-title {
+  color: var(--main-color);
+}
+
+.users .card-title:hover {
+  color: var(--seconady-color);
+}
+/* End Users */
+
+/* Start About Me */
+
+.about-me .username {
+  color: var(--main-color);
+}
+
+.about-me .username:hover {
+  color: var(--seconady-color);
+}
+
+.about-me .projects .card {
+  width: 300px;
+}
+
+/* End About Me */
